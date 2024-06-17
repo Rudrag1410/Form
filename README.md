@@ -1,31 +1,83 @@
-# React + TypeScript + Vite
+# Dynamic Forms with React and TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases a series of progressively complex dynamic forms built with React, TypeScript, useForm, Tailwind CSS, and Zod for form validation. Each form is designed to demonstrate different aspects of dynamic and conditional form handling, validation, and user interface design.
 
-Currently, two official plugins are available:
+## Forms Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project includes three levels of forms:
 
-## Expanding the ESLint configuration
+- **Level 1:** Basic Dynamic Form (Event Registration Form)
+- **Level 2:** Intermediate Dynamic Form (Job Application Form)
+- **Level 3:** Advanced Dynamic Form (Survey Form with Dependent Questions)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Level 1: Basic Dynamic Form
 
-- Configure the top-level `parserOptions` property like this:
+**Objective:** Create a form with dynamic fields and simple validation.
+**Form Type:** Event Registration Form
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Fields: Name, Email, Age, Guest option, Guest Name (conditional)
+- Conditional Logic: Show "Guest Name" only if attending with a guest.
+- Validation: Ensures name, email, and age are entered correctly. Guest name is required if attending with a guest.
+
+### Level 2: Intermediate Dynamic Form
+
+**Objective:** Build a form with nested conditional fields and multiple field types.
+**Form Type:** Job Application Form
+
+- Fields: Full Name, Email, Phone Number, Position, Relevant Experience, Portfolio URL, Management Experience, Additional Skills, Preferred Interview Time
+- Conditional Logic: Show fields based on the position applied for.
+- Validation: Comprehensive checks including email format, mandatory fields based on user choices.
+
+### Level 3: Advanced Dynamic Form
+
+**Objective:** Develop a form with complex conditional fields, dynamic sections, and integration with an external API.
+**Form Type:** Survey Form
+
+- Fields: Full Name, Email, Survey Topic, Dynamic Sections (Technology, Health, Education), Feedback
+- Conditional Logic: Display sections based on the selected survey topic. Fetch additional questions based on topic via an API.
+- Validation: Field-specific validations including checks for minimum feedback length.
+
+## Tech Stack
+
+- **React:** For building the user interface.
+- **TypeScript:** For adding static type definitions.
+- **useForm:** Utilized for form state management.
+- **Tailwind CSS:** For styling the components.
+- **Zod:** Used for form validation schemas.
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+- npm
+
+```bash
+npm install npm@latest -g
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# gynoveda-assignment
+## Installation
+
+- Clone the repo
+
+```bash
+git clone https://github.com/Rudrag1410/gynoveda-assignment.git
+```
+
+- Install NPM packages
+
+```bash
+cd gynoveda-assignment
+npm install
+```
+
+- Navigate to http://localhost:3000 to view the app.
+
+## Deployment
+
+This project is hosted on Vercel, accessible via [Gynoveda Assignment](https://gynoveda-assignment.vercel.app/).
+
+## Repository
+
+Source code is available on GitHub at [Gynoveda Assignment Repository](https://github.com/Rudrag1410/gynoveda-assignment).

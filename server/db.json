@@ -1,0 +1,17 @@
+{
+   "questions": {
+     "Technology": [
+       { "id": "favoriteProgrammingLanguage", "label": "Favorite Programming Language", "type": "select", "options": ["JavaScript", "Python", "Java", "C#"] },
+       { "id": "yearsOfExperience", "label": "Years of Experience", "type": "number" }
+     ],
+     "Health": [
+       { "id": "exerciseFrequency", "label": "Exercise Frequency", "type": "select", "options": ["Daily", "Weekly", "Monthly", "Rarely"] },
+       { "id": "dietPreference", "label": "Diet Preference", "type": "select", "options": ["Vegetarian", "Vegan", "Non-Vegetarian"] }
+     ],
+     "Education": [
+       { "id": "highestQualification", "label": "Highest Qualification", "type": "select", "options": ["High School", "Bachelor's", "Master's", "PhD"] },
+       { "id": "fieldOfStudy", "label": "Field of Study", "type": "text" }
+     ]
+   }
+ }
+ 
